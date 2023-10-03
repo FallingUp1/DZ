@@ -36,7 +36,7 @@ export default {
      if(this.checked6 == true){
         this.Result += 30
      }
-     if(this.checked1 == true){
+     if(this.checked7 == true){
         this.Result += 20
      }
   }
@@ -67,12 +67,12 @@ export default {
   <div>
   <p>Острый соус:</p>
   <input name="radio" type="radio" v-model="selected2" value="10">Да</input>
-  <input type="radio" name="radio">Нет</input>
+  <input type="radio" name="radio" v-model="selected2" value="0">Нет</input>
   </div>
 
   <div>
   <p>Напиток:</p>
-  <input type="checkbox" name="checkbox"  v-model="checked4">Да</input>
+  <input type="checkbox" name="checkbox" v-model="checked4">Да</input>
   <p v-if ="checked4 == true">
   <div>
   <input type="checkbox" v-model="checked5" >Морс</input>
